@@ -172,3 +172,15 @@ ul li a{
 body{
     background-color: #f8f7f2;
 }
+
+@media screen and (max-width: 768px){
+    .nav-container{
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .nav-list{
+        font-size: 2rem;
+    }
+}
