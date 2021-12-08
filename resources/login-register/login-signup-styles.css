@@ -145,6 +145,10 @@ input{
     margin: 5px 0;
     transition: 0.3s;
     letter-spacing: 2px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover{

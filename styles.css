@@ -133,7 +133,13 @@ a{
     cursor: pointer;
     transition: 0.5s;
 }
-/* GET STARTED BUTTON DESIGN */
+
+@media screen and (max-width: 768px){
+    .nav-container{
+        padding: 4rem 3rem;
+    }
+}
+
 /* HOME MEDIA QUERY FOR OTHER SCREENS */
 @media screen and (min-width: 768px){
     .btn{
