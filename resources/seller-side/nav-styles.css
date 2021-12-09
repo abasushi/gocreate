@@ -58,6 +58,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 100;
     }
 
     .nav-list{
@@ -87,7 +88,6 @@ body{
 
 /* NAV-BAR */
 header{
-    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -95,7 +95,7 @@ header{
 }
 
 .nav-container{
-    background-color: #F0ECD7;
+    background-color: #ffffff;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -167,10 +167,6 @@ ul li a{
 .profile-icons img{
     width: 45px;
     margin-left: 1.5rem;
-}
-
-body{
-    background-color: #f8f7f2;
 }
 
 @media screen and (max-width: 768px){
