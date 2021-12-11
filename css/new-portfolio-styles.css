@@ -1,0 +1,20 @@
+body{
+    background-color: #f1f1f1;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;  
+}
+
+.new-portfolio-container{
+    padding: 0 15rem;
+    width: 100%;   
+}
+
+.portfolio-input-field{
+    display: flex;
+    justify-content: space-between;
+}
