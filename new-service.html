@@ -18,7 +18,7 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="css\nav-styles.css">
-    <link rel="stylesheet" href="css\new-portfolio-styles.css">
+    <link rel="stylesheet" href="css\new-service-styles.css">
 </head>
 <body>
     <header>
@@ -69,19 +69,24 @@
             <div class="new-portfolio-container">
                 <div class="portfolio-form-container">
                     <form action="#">
-                        <h2>Portfolio Details</h2>
+                        <h2>Service Details</h2>
                         <div class="portfolio-input-field">
-                            <p class="portfolio-image">Portfolio Image</p>
+                            <p class="portfolio-image">Service Image</p>
                             <input type="file">
                         </div>
         
                         <div class="portfolio-input-field">
-                            <p class="portfolio-title">Portfolio Title</p>
-                            <input type="text" placeholder="Enter Text Here" maxlength="100">
+                            <p class="portfolio-title">Title of Service</p>
+                            <input type="text" placeholder="Enter Title Here" maxlength="100">
+                        </div>
+
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-description">Description of Service</p>
+                            <input type="text" placeholder="Enter Description Here" maxlength="600">
                         </div>
         
                         <div class="portfolio-input-field">
-                            <p class="portfolio-category">Category</p>
+                            <p class="portfolio-category">Category of Service</p>
                             <select name="category" id="portfolio-category">
                                 <option value="traditional-art">Traditional Art</option>
                                 <option value="traditional-art">Traditional Art</option>
@@ -91,6 +96,23 @@
                                 <option value="traditional-art">Traditional Art</option>
                             </select>
                         </div>
+
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-price">Price</p>
+                            <input type="number" placeholder="Enter Price Here" maxlength="100">
+                        </div>
+
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-category">Mode of Delivery</p>
+                            <select name="mode-of-delivery" id="portfolio-mod">
+                                <option value="email">E-mail</option>
+                            </select>
+                        </div>
+
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-description">Time Frame of Service</p>
+                            <input type="text" placeholder="Enter Time Frame Here" maxlength="600">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -98,8 +120,8 @@
     
         <section class="portfolio-buttons-section">
             <div class="portfolio-buttons-container">
-                <a href="seller-portfolio.html" class="portfolio-btn">DISCARD</a>
-                <a href="seller-portfolio.html" class="services-btn">ADD TO PORTFOLIO</a>
+                <a href="seller-services.html" class="portfolio-btn">DISCARD</a>
+                <a href="seller-services.html" class="services-btn">ADD NEW SERVICE</a>
             </div>
         </section>
     </div>

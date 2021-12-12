@@ -9,7 +9,7 @@ section{
 }
 
 .wrapper{
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .new-portfolio-section{
@@ -22,14 +22,14 @@ section{
     align-items: center;
     border-radius: 10px;
     height: 100%;
-    min-height: 400px;
+    min-height: 500px;
     background-color: #FFFFFF;
     width: 100%;
 }
 
 .portfolio-form-container{
     width: 100%;
-    padding: 0 5rem;
+    padding: 2rem 5rem;
 }
 
 .portfolio-form-container h2{
@@ -41,9 +41,9 @@ section{
 
 .portfolio-input-field{
     display: grid;
-    grid-template-columns: 20% 80%;
-    margin: 2rem 0;
+    grid-template-columns: 25% 75%;
     align-items: center;
+    margin: 2rem 0;
 }
 
 .portfolio-input-field input{
