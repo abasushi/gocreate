@@ -12,11 +12,11 @@ section{
     padding: 3rem 0;
 }
 
-.new-service-section{
+.new-portfolio-section{
     padding: 0 15rem;
 }
 
-.new-service-container{
+.new-portfolio-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,26 +27,26 @@ section{
     width: 100%;
 }
 
-.service-form-container{
+.portfolio-form-container{
     width: 100%;
     padding: 2rem 5rem;
 }
 
-.service-form-container h2{
+.portfolio-form-container h2{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-weight: 200;
 }
 
-.service-input-field{
+.portfolio-input-field{
     display: grid;
     grid-template-columns: 25% 75%;
     align-items: center;
     margin: 2rem 0;
 }
 
-.service-input-field input{
+.portfolio-input-field input{
     margin-top: 0.2rem;
     font-family: 'Montserrat', sans-serif;
     outline: none;
@@ -55,7 +55,7 @@ section{
     padding: 0 20px 0 0;
 }
 
-.service-input-field select{
+.portfolio-input-field select{
     margin-top: 0.2rem;
     font-family: 'Montserrat', sans-serif;
     outline: none;
@@ -64,13 +64,13 @@ section{
     padding: 0 20px 0 0;
 }
 
-.service-buttons-section{
+.portfolio-buttons-section{
     padding: 0 15rem;
     justify-content: end;
     align-items: flex-end;
 }
 
-.service-buttons-container a{
+.portfolio-buttons-container a{
     text-decoration: none;
     border: none;
     outline: none;
@@ -88,50 +88,50 @@ section{
     margin-top: 1rem;
 }
 
-.service-buttons-container a:hover{
+.portfolio-buttons-container a:hover{
     background-color: #197730;
 }
 
 @media only screen and (max-width: 768px){
-    .new-service-section{
+    .new-portfolio-section{
         padding: 0 2rem;
     }
 
-    .service-form-container h2{
+    .portfolio-form-container h2{
         font-size: 2.5rem;
     }
 
-    .service-input-field{
+    .portfolio-input-field{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .service-input-field input{
+    .portfolio-input-field input{
         padding: 0;
         justify-content: center;
         text-align: center;
         width: 100%;
     }
 
-    .service-input-field select{
+    .portfolio-input-field select{
         padding: 0;
         width: 100%;
         text-align: center;
     }
 
-    .service-buttons-section{
+    .portfolio-buttons-section{
         padding: 0 2rem;
         justify-content: center;
         align-items: center;        
     }
 
-    .service-buttons-container{
+    .portfolio-buttons-container{
         width: 100%;
     }
 
-    .service-buttons-section a{
+    .portfolio-buttons-section a{
         display: flex;
         flex-direction: column;
         text-align: center;

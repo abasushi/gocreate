@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoCreate Seller | Profile</title>
+    <title>GoCreate | New Portfolio</title>
 
     <!-- ===== ICON ===== -->
     <link rel="icon" type="image/png" href="img\logo.svg">
@@ -18,7 +18,7 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="css\nav-styles.css">
-    <link rel="stylesheet" href="css\seller-profile-styles.css">
+    <link rel="stylesheet" href="css\seller-edit-profile-styles.css">
 </head>
 <body>
     <header>
@@ -43,8 +43,8 @@
                     <li class="nav-item"> <a href="#" class="nav-link nav-text">Messages</a></li>
                     <li class="nav-item"> <a href="seller-services.html" class="nav-link nav-text">Services</a></li>
                     <li class="nav-item"> <a href="seller-portfolio.html" class="nav-link nav-text">Portfolio</a></li>
-                    <li class="nav-item"> <a href="#" class="nav-link mobile-view nav-text">Settings</a></li>
-                    <li class="nav-item"> <a href="index.html" class="nav-link mobile-view nav-text">Log Out</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link mobile-view">Settings</a></li>
+                    <li class="nav-item"> <a href="index.html" class="nav-link mobile-view">Log Out</a></li>
                 </ul>
             </div>
 
@@ -64,45 +64,54 @@
         </nav>
     </header>
 
-    <section class="profile-section">
-        <div class="profile container">
-            <div class="profile-card">
-                <div class="profile-icon-container">
-                    <div class="profile-icon">
-                        <img src="img\nav-icon-user-icon.svg" alt="profile">
-                    </div>
-                </div>
+    <div class="wrapper">
+        <section class="new-portfolio-section">
+            <div class="new-portfolio-container">
+                <div class="portfolio-form-container">
+                    <form action="#">
+                        <h2>Edit Profile</h2>
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-image">Profile Photo</p>
+                            <input type="file">
+                        </div>
+        
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-title">Name</p>
+                            <input type="text" placeholder="Name" maxlength="100">
+                        </div>
 
-                <div class="profile-details">
-                    <div class="name-container">
-                        <div class="name-with-button">
-                            <h3 class="full-name">Sean David Abalora</h3>
-                            <h4 class="username">@abasushi</h4>
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-description">Username</p>
+                            <input type="text" placeholder="Username" maxlength="25">
                         </div>
-                        <a href="seller-edit-profile.html" class="edit-profile-btn">EDIT PROFILE</a>
-                    </div>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ipsa reprehenderit, rem vitae porro adipisci perspiciatis qui perferendis asperiores ea sapiente quasi mollitia delectus magnam laborum placeat aspernatur quaerat magni a est quos sint eum? Ea voluptatem repudiandae similique, ratione vel cum illo voluptate beatae officiis alias non, quam possimus.</p>
-                    
-                    <div class="location">
-                        <div class="location-icon">
-    
+        
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-description">Bio</p>
+                            <input type="text" placeholder="Bio" maxlength="600">
                         </div>
-    
-                        <div class="location-text">
-                            <p class="location-name">Philippines</p>
+
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-price">E-mail</p>
+                            <input type="email" placeholder="E-mail">
                         </div>
-                    </div>
+
+                        <div class="portfolio-input-field">
+                            <p class="portfolio-price">Phone Number</p>
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="navigation-section">
-        <div class="navigation-container">
-            <a href="seller-profile-portfolio.html" class="portfolio-btn">PORTFOLIO</a>
-            <a href="seller-profile-services.html" class="services-btn">SERVICES</a>
-        </div>
-    </section>
+        </section>
+    
+        <section class="portfolio-buttons-section">
+            <div class="portfolio-buttons-container">
+                <a href="seller-services.html" class="portfolio-btn">DISCARD</a>
+                <a href="seller-services.html" class="services-btn">SAVE CHANGES</a>
+            </div>
+        </section>
+    </div>
+    
 
     <!-- ===== JS ===== -->
     <script src="js\nav-script.js"></script>

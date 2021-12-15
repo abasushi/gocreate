@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoCreate | Manage Services</title>
+    <title>GoCreate | Manage Orders</title>
 
     <!-- ===== ICON ===== -->
     <link rel="icon" type="image/png" href="img\logo.svg">
@@ -18,7 +18,7 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="css\nav-styles.css">
-    <link rel="stylesheet" href="css\seller-services-styles.css">
+    <link rel="stylesheet" href="css\seller-orders-styles.css">
 </head>
 <body>
     <header>
@@ -64,12 +64,22 @@
         </nav>
     </header>
 
-    <section class="services-section">
-        <div class="container services-container">
-            <div class="services-header">
-                <h2 class="services-name">Manage Services</h2>
-                <a href="new-service.html" class="add-services-btn">Add New Service</a>
+    <section class="orders-section">
+        <div class="container orders-container">
+            <div class="orders-header">
+                <h2 class="orders-name">Manage Orders</h2>
             </div>
+        </div>
+    </section>
+
+    <section class="order-navigation-section">
+        <div class="navigation-container" id="navigation-container">
+            <ul>
+                <li class="btn active"> <a href="seller-all-orders.html">All</a></li>
+                <li class="btn"> <a href="seller-pending-orders.html">Pending</a></li>
+                <li class="btn"> <a href="seller-toDeliver-orders.html">To Deliver</a></li>
+                <li class="bnt"> <a href="seller-completed-orders.html">Completed</a></li>
+            </ul>
         </div>
     </section>
 
@@ -79,144 +89,100 @@
 
     <section class="table-titles-section">
         <div class="table-titles">
-            <p class="service-title">Service</p>
-            <p class="service-category">Category</p>
-            <p class="service-price">Price</p>
-            <p class="service-actions">Actions</p>
+            <p class="order-details">Order</p>
+            <p class="orders-total">Order Total</p>
+            <p class="orders-price">Status</p>
+            <p class="orders-actions">Actions</p>
         </div>
     </section>
 
-    <section class="service-table-section">
-        <div class="service-table-container">
-            <div class="service-table">
-                <div class="service-column">
+    <section class="orders-table-section">
+        <div class="orders-table-container">
+            <div class="orders-table">
+                <div class="orders-column">
                     <div class="table-image">
                         
                     </div>
                     <p class="table-title">Service Title</p>
                 </div>
 
-                <div class="category-column">
-                    <p class="table-category">Category</p>
+                <div class="total-column">
+                    <p class="total-price">₱2550</p>
+                    <p class="total-mod">E-mail</p>
                 </div>
 
-                <div class="price-column">
-                    <p class="price-category">Price</p>
+                <div class="status-column">
+                    <p class="status-category">Pending</p>
                 </div>
 
                 <div class="actions-column">
-                    <a href="#" class="delete-btn">Edit</a>  
-                    <a href="#" class="delete-btn">Delete</a>  
+                    <a href="#" class="complete-btn">Mark As Completed</a>
                 </div>                              
             </div>
 
-            <div class="service-table">
-                <div class="service-column">
+            <div class="orders-table">
+                <div class="orders-column">
                     <div class="table-image">
                         
                     </div>
                     <p class="table-title">Service Title</p>
                 </div>
 
-                <div class="category-column">
-                    <p class="table-category">Category</p>
+                <div class="total-column">
+                    <p class="total-price">₱500</p>
+                    <p class="total-mod">E-mail</p>
                 </div>
 
-                <div class="price-column">
-                    <p class="price-category">Price</p>
+                <div class="status-column">
+                    <p class="status-category">Pending</p>
                 </div>
 
                 <div class="actions-column">
-                    <a href="#" class="delete-btn">Edit</a>  
-                    <a href="#" class="delete-btn">Delete</a>  
+                    <a href="#" class="complete-btn">Mark As Completed</a>
                 </div>                              
             </div>
 
-            <div class="service-table">
-                <div class="service-column">
+            <div class="orders-table">
+                <div class="orders-column">
                     <div class="table-image">
                         
                     </div>
                     <p class="table-title">Service Title</p>
                 </div>
 
-                <div class="category-column">
-                    <p class="table-category">Category</p>
+                <div class="total-column">
+                    <p class="total-price">₱150</p>
+                    <p class="total-mod">E-mail</p>
                 </div>
 
-                <div class="price-column">
-                    <p class="price-category">Price</p>
+                <div class="status-column">
+                    <p class="status-category">To Deliver</p>
                 </div>
 
                 <div class="actions-column">
-                    <a href="#" class="delete-btn">Edit</a>  
-                    <a href="#" class="delete-btn">Delete</a>  
+                    <a href="#" class="complete-btn">Mark As Completed</a>
                 </div>                              
             </div>
 
-            <div class="service-table">
-                <div class="service-column">
+            <div class="orders-table">
+                <div class="orders-column">
                     <div class="table-image">
                         
                     </div>
                     <p class="table-title">Service Title</p>
                 </div>
 
-                <div class="category-column">
-                    <p class="table-category">Category</p>
+                <div class="total-column">
+                    <p class="total-price">₱150</p>
+                    <p class="total-mod">E-mail</p>
                 </div>
 
-                <div class="price-column">
-                    <p class="price-category">Price</p>
-                </div>
-
-                <div class="actions-column">
-                    <a href="#" class="delete-btn">Edit</a>  
-                    <a href="#" class="delete-btn">Delete</a>  
-                </div>                              
-            </div>
-
-            <div class="service-table">
-                <div class="service-column">
-                    <div class="table-image">
-                        
-                    </div>
-                    <p class="table-title">Service Title</p>
-                </div>
-
-                <div class="category-column">
-                    <p class="table-category">Category</p>
-                </div>
-
-                <div class="price-column">
-                    <p class="price-category">Price</p>
+                <div class="status-column">
+                    <p class="status-category">Completed</p>
                 </div>
 
                 <div class="actions-column">
-                    <a href="#" class="delete-btn">Edit</a>  
-                    <a href="#" class="delete-btn">Delete</a>  
-                </div>                              
-            </div>
-
-            <div class="service-table">
-                <div class="service-column">
-                    <div class="table-image">
-                        
-                    </div>
-                    <p class="table-title">Service Title</p>
-                </div>
-
-                <div class="category-column">
-                    <p class="table-category">Category</p>
-                </div>
-
-                <div class="price-column">
-                    <p class="price-category">Price</p>
-                </div>
-
-                <div class="actions-column">
-                    <a href="#" class="delete-btn">Edit</a>  
-                    <a href="#" class="delete-btn">Delete</a>  
+                    <a href="#" class="view-btn">View Order Details</a>
                 </div>                              
             </div>
         </div>
@@ -224,5 +190,6 @@
 
     <!-- ===== JS ===== -->
     <script src="js\nav-script.js"></script>
+    <script src="js\seller-orders-script.js"></script>
 </body>
 </html>

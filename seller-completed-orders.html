@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoCreate Seller | Profile</title>
+    <title>GoCreate | Manage Orders</title>
 
     <!-- ===== ICON ===== -->
     <link rel="icon" type="image/png" href="img\logo.svg">
@@ -18,7 +18,7 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="css\nav-styles.css">
-    <link rel="stylesheet" href="css\seller-profile-styles.css">
+    <link rel="stylesheet" href="css\seller-orders-styles.css">
 </head>
 <body>
     <header>
@@ -43,8 +43,8 @@
                     <li class="nav-item"> <a href="#" class="nav-link nav-text">Messages</a></li>
                     <li class="nav-item"> <a href="seller-services.html" class="nav-link nav-text">Services</a></li>
                     <li class="nav-item"> <a href="seller-portfolio.html" class="nav-link nav-text">Portfolio</a></li>
-                    <li class="nav-item"> <a href="#" class="nav-link mobile-view nav-text">Settings</a></li>
-                    <li class="nav-item"> <a href="index.html" class="nav-link mobile-view nav-text">Log Out</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link mobile-view">Settings</a></li>
+                    <li class="nav-item"> <a href="index.html" class="nav-link mobile-view">Log Out</a></li>
                 </ul>
             </div>
 
@@ -64,43 +64,61 @@
         </nav>
     </header>
 
-    <section class="profile-section">
-        <div class="profile container">
-            <div class="profile-card">
-                <div class="profile-icon-container">
-                    <div class="profile-icon">
-                        <img src="img\nav-icon-user-icon.svg" alt="profile">
-                    </div>
-                </div>
-
-                <div class="profile-details">
-                    <div class="name-container">
-                        <div class="name-with-button">
-                            <h3 class="full-name">Sean David Abalora</h3>
-                            <h4 class="username">@abasushi</h4>
-                        </div>
-                        <a href="seller-edit-profile.html" class="edit-profile-btn">EDIT PROFILE</a>
-                    </div>
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ipsa reprehenderit, rem vitae porro adipisci perspiciatis qui perferendis asperiores ea sapiente quasi mollitia delectus magnam laborum placeat aspernatur quaerat magni a est quos sint eum? Ea voluptatem repudiandae similique, ratione vel cum illo voluptate beatae officiis alias non, quam possimus.</p>
-                    
-                    <div class="location">
-                        <div class="location-icon">
-    
-                        </div>
-    
-                        <div class="location-text">
-                            <p class="location-name">Philippines</p>
-                        </div>
-                    </div>
-                </div>
+    <section class="orders-section">
+        <div class="container orders-container">
+            <div class="orders-header">
+                <h2 class="orders-name">Manage Orders</h2>
             </div>
         </div>
     </section>
 
-    <section class="navigation-section">
+    <section class="order-navigation-section">
         <div class="navigation-container">
-            <a href="seller-profile-portfolio.html" class="portfolio-btn">PORTFOLIO</a>
-            <a href="seller-profile-services.html" class="services-btn">SERVICES</a>
+            <ul>
+                <li class="active"> <a href="seller-all-orders.html">All</a></li>
+                <li> <a href="seller-pending-orders.html">Pending</a></li>
+                <li> <a href="seller-toDeliver-orders.html">To Deliver</a></li>
+                <li> <a href="seller-completed-orders.html">Completed</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="divider-section">
+        <span class="divider"></span>
+    </section>
+
+    <section class="table-titles-section">
+        <div class="table-titles">
+            <p class="order-details">Order</p>
+            <p class="orders-total">Order Total</p>
+            <p class="orders-price">Status</p>
+            <p class="orders-actions">Actions</p>
+        </div>
+    </section>
+
+    <section class="orders-table-section">
+        <div class="orders-table-container">
+            <div class="orders-table">
+                <div class="orders-column">
+                    <div class="table-image">
+                        
+                    </div>
+                    <p class="table-title">Service Title</p>
+                </div>
+
+                <div class="total-column">
+                    <p class="total-price">₱150</p>
+                    <p class="total-mod">E-mail</p>
+                </div>
+
+                <div class="status-column">
+                    <p class="status-category">Completed</p>
+                </div>
+
+                <div class="actions-column">
+                    <a href="#" class="view-btn">View Order Details</a>
+                </div>                              
+            </div>
         </div>
     </section>
 
