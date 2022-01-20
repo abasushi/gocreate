@@ -8,6 +8,16 @@ section{
     align-items: center;
 }
 
+textarea{
+    resize: vertical;
+    margin-top: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    line-height: 1;
+    font-size: 1rem;
+    padding: 0.1rem;
+}
+
 .wrapper{
     padding: 3rem 0;
 }

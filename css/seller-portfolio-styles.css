@@ -8,6 +8,12 @@ section{
     margin: 2rem 0;  
 }
 
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
 /* PORTFOLIO HEADER SECTION */
 .portfolio-container{
     padding: 0 5rem;
@@ -28,6 +34,7 @@ section{
 }
 
 .portfolio-header a{
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     border: none;
     outline: none;
@@ -120,6 +127,7 @@ section{
 }
 
 .actions-column a{
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     border: none;
     outline: none;
@@ -156,6 +164,10 @@ section{
         width: 100%;
         text-align: center;
         margin-top: 0.5rem;
+    }
+
+    .add-portfolio-btn{
+        margin-top: 1rem;
     }
 
     .portfolio-table{

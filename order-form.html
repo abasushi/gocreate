@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCreate | Order Form</title>
+
+    <!-- ===== ICON ===== -->
+    <link rel="icon" type="image/png" href="img\logo.svg">
+
+    <!-- ===== WEB ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Goblin+One&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&family=Ranchers&family=Slackey&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css\nav-styles.css">
+    <link rel="stylesheet" href="css\order-styles.css">
+
+
+    <!-- ===== JS ===== -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">            
+            <div class="logo">
+                <a href="buyer-home.html"><img src="img\buyer-logo.svg" class="header-logo"></a>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="buyer-home.html">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="navigation-area">
+        <div class="navigation-area-container">
+            <div class="navigation-icons">
+                <div class="navigation-title">
+                    <h2>Order Form</h2>
+                </div>
+
+                <button>
+                    <a href="#"><i class='bx bxs-message-square-dots bx-flip-horizontal bx-md'></i></a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pages">
+        <div class="pages-container">
+            <div class="page">
+                <h4>1</h4>
+                <h5>Order Form</h5>
+            </div>
+
+            <i class="bx bx-chevron-right"></i>
+
+            <div class="page">
+                <h4>2</h4>
+                <h5>Order Review</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-form-area">
+        <div class="form-container">
+            <div class="order-form">
+                <form action="#">
+                    <h2>Basic Information</h2>
+
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" placeholder="Address">
+                    </div>
+
+                    <h2>Available Services</h2>
+
+                    <div class="services">
+                        <!-- <h3>What will you avail?</h3> -->
+                        <div class="services-card">
+                            <p class="title">Lorem Ipsum</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                                quibusdam officia debitis illo iusto maxime deserunt nisi quas quam! Atque sequi
+                                dolorem, molestias doloribus iste, quod officia obcaecati, laboriosam quas corrupti
+                                tempora. Laudantium soluta eius adipisci impedit, totam minima praesentium doloribus
+                                laboriosam esse possimus maxime quo. Porro tenetur a laboriosam?</p>
+                            <p class="price">PHP1,500.00</p>
+                        </div>
+
+                        <div class="services-card">
+                            <p class="title">Lorem Ipsum</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                                quibusdam officia debitis illo iusto maxime deserunt nisi quas quam! Atque sequi
+                                dolorem, molestias doloribus iste, quod officia obcaecati, laboriosam quas corrupti
+                                tempora. Laudantium soluta eius adipisci impedit, totam minima praesentium doloribus
+                                laboriosam esse possimus maxime quo. Porro tenetur a laboriosam?</p>
+                            <p class="price">PHP1,500.00</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="input-field">
+                        <input type="number" placeholder="Number of Days">
+                    </div> -->
+
+                    <!-- <div class="input-field">
+                        <p>Payment Method</p>
+                        <select name="payment-method" id="payment-method">
+                            <option value="PayPal">PayPal</option>
+                        </select>
+                    </div> -->
+
+                    <div class="text-field">
+                        <textarea name="" id="" rows="10" placeholder="Additional Instructions"></textarea>
+                    </div>
+                </form>
+
+                <section class="button-area">
+                    <button>
+                        <a href="#">Continue</a>
+                    </button>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JS ===== -->
+    <script src="js\nav-script.js"></script>
+</body>
+
+</html>

@@ -5,30 +5,57 @@ body{
 section{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 2rem 0;  
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.seller-profile{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 4rem;
+    padding: 0 5rem;
+}
+
+@media only screen and (max-width: 768px){
+    .seller-profile{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .container{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
+    flex-direction: column;
 }
 
 /* PROFILE SECTION */
-.profile-section{
-    padding: 0 5rem;
-}
-
-.profile{
-    background-color: #ffffff;
-    padding: 2rem 0;
-}
-
 .profile-card{
-    width: 90%;
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.extra-profile-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7rem 0;
+}
+
+.extra-profile-details i{
+    font-size: 1.3rem;
+    color: #1B8436;
+}
+
+.extra-profile-details p{
+    text-align: end;
 }
 
 .profile-icon-container{
@@ -38,17 +65,18 @@ section{
     justify-content: center;
 }
 
-.profile-icon{
+.profile-icon img{
     width: 200px;
     height: 200px;
-    clip-path: circle(100%);
+    /* background: #197730;
+    border-radius: 100%; */
 }
 
 .name-with-button{
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 1rem;
 }
 
 .name-container{
@@ -57,7 +85,12 @@ section{
     flex-direction: column;
 }
 
+.profile-actions{
+    margin-top: 1rem;
+}
+
 .name-container a{
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     border: none;
     outline: none;
@@ -97,7 +130,6 @@ section{
 
 .profile-details p{
     font-family: 'Montserrat', sans-serif;
-    margin-top: 1rem;
     font-size: 1rem;
     text-align: justify;
     line-height: 1.4rem;
@@ -154,10 +186,6 @@ section{
 }
 
 /* NAVIGATION SECTION */
-.navigation-section{
-    padding: 0 5rem;
-}
-
 .navigation-container{
     width: 100%;
     display: flex;
@@ -200,8 +228,73 @@ section{
 }
 
 /* PORTFOLIO SECTION */
-.portfolio-section{
-    padding: 0 5rem;
+.portfolio-header{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #197730;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.portfolio-header h3{
+    font-family: 'Syne';
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-header a{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #1B8436;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.5rem 0.8rem;
+    transition: 0.4s;
+}
+
+/* PORTFOLIO SECTION */
+.services-header{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #197730;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.services-header h3{
+    font-family: 'Syne';
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.services-header a{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #1B8436;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.5rem 0.8rem;
+    transition: 0.4s;
 }
 
 .card-container{
@@ -213,15 +306,14 @@ section{
 
 .card{
     background-color: #ffffff;
-    width: 320px;
-    margin-bottom: 20px;
+    width: 250px;
+    margin-bottom: 1rem;
     border-radius: 10px;
-    flex-wrap: wrap;
 }
 
 .card-image{
     background-color: #1B8436;
-    height: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0 0;
@@ -238,17 +330,14 @@ section{
 
 @media only screen and (max-width: 768px){
     .card{
-        width: 100%
+        width: 100%;
     }
     .card-image{
-        height: 500px;
+        height: 300px;
     }
 }
 
 /* SERVICES SECTION */
-.services-section{
-    padding: 0 5rem;
-}
 
 .services-container{
     display: flex;
@@ -339,19 +428,7 @@ section{
 }
 
 @media only screen and (max-width: 768px){
-    .profile-section{
-        padding: 0 2rem;
-    }
-    .services-section{
-        padding: 0 2rem;
-    }
-    .navigation-section{
-        padding: 0 2rem;
-    }
-    .portfolio-section{
-        padding: 0 2rem;
-    }
-    .services-section{
-        padding: 0 2rem;
+    .seller-profile{
+        padding: 0 3rem;
     }
 }

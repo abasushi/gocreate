@@ -9,6 +9,12 @@ section{
     margin: 2rem 0;  
 }
 
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
 /* orders HEADER SECTION */
 .orders-container{
     padding: 0 5rem;
@@ -77,6 +83,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
 }
 
 .navigation-container a{
@@ -158,6 +165,7 @@ section{
 }
 
 .actions-column a{
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     border: none;
     outline: none;
@@ -213,11 +221,12 @@ section{
         margin: 0;
     }
 
-    .category-column{
+    .total-column{
         margin: 0.5rem 0;
+        text-align: center;
     }
 
-    .price-column{
+    .status-column{
         margin: 0.5rem 0;
     }
 
@@ -241,6 +250,10 @@ section{
     }
 
     .orders-table-section{
+        padding: 0 2rem;
+    }
+
+    .order-navigation-section{
         padding: 0 2rem;
     }
 } 

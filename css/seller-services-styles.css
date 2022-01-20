@@ -9,6 +9,12 @@ section{
     margin: 2rem 0;  
 }
 
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
 /* SERVICES HEADER SECTION */
 .services-container{
     padding: 0 5rem;
@@ -28,6 +34,7 @@ section{
 }
 
 .services-header a{
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     border: none;
     outline: none;
@@ -53,7 +60,6 @@ section{
     background-color: #0f0f0f;
     height: 2px;
 }
-
 
 .table-titles-section{
     padding: 0 7rem;
@@ -121,6 +127,7 @@ section{
 }
 
 .actions-column a{
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     border: none;
     outline: none;
@@ -156,7 +163,11 @@ section{
     .services-header a{
         width: 100%;
         text-align: center;
-        margin-top: 0.5rem;
+        margin-top: rem;
+    }
+
+    .add-service-btn{
+        margin-top: 1rem;
     }
 
     .service-table{

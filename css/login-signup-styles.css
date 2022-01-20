@@ -13,8 +13,18 @@ body{
     align-items: center;
     height: 100vh;
     /* margin: -20px 0 50px; */
+
 }
 
+.header-logo{
+    background: url(/img/logo.svg) ;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: none;
+}
 
 .login-signup-container{
     background: #f0ecd7;
@@ -129,12 +139,25 @@ input{
     color: #163A24;
 }
 
+.forgot-pw-icon img{
+    width: 100%;
+}
+
+.forgot-pw-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 0.5rem;
+    background-color: #163A24;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+
 .btn{
     font-family: 'Syne', sans-serif;
     width: 320px;
     height: 40px;
-    border: none;
-    outline: none;
     border-radius: 55px;
     cursor: pointer;
     background-color: #163A24;
@@ -145,14 +168,19 @@ input{
     margin: 5px 0;
     transition: 0.3s;
     letter-spacing: 2px;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 .btn:hover{
     background-color: #E48928;
+}
+
+a:hover{
     color: #163A24;
 }
 
@@ -164,6 +192,152 @@ input{
     outline: none;
 }
 
+/* UPLOAD PIC STYLE */
+.container{
+  width: 100%;
+  position: relative;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.mobile-btn h3{
+    font-family: 'Fredoka One', sans-serif;
+    color: #163A24;
+    font-weight: lighter;
+    font-size: 1.4rem;
+}
+
+.container .wrapper{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 2px solid #163A24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.wrapper.active{
+  border: none;
+}
+
+.wrapper .image{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wrapper .icon{
+  font-size: 50px;
+  text-align: center;
+  color: #1B8436;
+}
+
+.wrapper .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #5b7b63;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper .text i{
+    font-size: 0.7rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #f0ecd7;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+    color: #1B8436;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  color: #fff;
+  display: none;
+  background-color: #1B8436;
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container #custom-btn{
+  display: block;
+  width: 250px;
+  padding: 0.4rem 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Syne', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+    background-color: #1B8436;
+    transition: 0.2s;
+}
+
+.container #custom-btn:hover{
+    background-color: #163A24;  
+}
+
+.proceed-btn a{
+  display: block;
+  width: 250px;
+  padding: 0.4rem 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Syne', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #1B8436;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.proceed-btn a:hover{
+    background-color: #163A24;  
+}
+
 @media screen and (min-width: 768px){
     .mobile-btn{
         display: none;
@@ -172,7 +346,7 @@ input{
 
 @media screen and (max-width: 768px){
     .login-signup-container{
-        min-height: 550px;
+        min-height: 650px;
         width: 75%;
     }
 
@@ -290,7 +464,6 @@ input[type="radio"]:checked + label{
         width: 100%;
         height: 100%;
         overflow: hidden;
-        transition: transform 0.6s ease-in-out;
     }
     
     .overlay{
@@ -298,7 +471,7 @@ input[type="radio"]:checked + label{
         background-repeat: none;
         position: relative; 
         height: 100%;
-        transition: transform 0.6s ease-in-out;
+        background-position: center;
     }
     
     .overlay-panel{
@@ -310,7 +483,6 @@ input[type="radio"]:checked + label{
         height: 100%;
         width: 100%;
         text-align: center;
-        transition: transform 0.6s ease-in-out;
     }
     
     .overlay-title{
