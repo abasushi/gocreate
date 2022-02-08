@@ -1,74 +1,84 @@
-body{
-    background-color: #f1f1f1;
+body {
+  background-color: #f1f1f1;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-    padding: 0 20rem;
+section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 0 20rem;
 }
 
-.settings-container{
-    width: 100%;
-    justify-content: center;
-    display: grid;
-    column-gap: 1rem;
-    grid-template-columns: 20% 80%;
+.settings-container {
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: 20% 80%;
 }
 
-.settings-options{
-    text-align: end;
+.settings-options {
+  text-align: end;
 }
 
-.settings-options ul{
-    list-style: none;
+.settings-options ul {
+  list-style: none;
 }
 
-.settings-options a{
-    color: #1B8436;
-    font-weight: 600;
-}
-
-.edit-profile-container{
-    background-color: #FFFFFF;
-    padding: 2rem 4rem;
-    border-radius: 5px;
-}
-
-.form-container h2{
-    font-family: 'Fredoka One', sans-serif;
-    font-size: 1.3rem;
-    text-align: center;
-    font-weight: lighter;
-    text-transform: uppercase;
-}
-
-.input-field{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    align-items: center;
-    margin: 2rem 0;
-}
-
-.input-field p{
+.settings-options a {
+  color: #1B8436;
   font-weight: 600;
 }
 
-.input-field input{
-    margin-top: 0.2rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    line-height: 1;
-    font-size: 1rem;
-    padding: 0.3rem;
-    border-radius: 6px;
-    border: 2px solid #000000;
-    outline: none;
+.edit-profile-container {
+  background-color: #FFFFFF;
+  padding: 2rem 4rem;
+  border-radius: 5px;
 }
 
+.form-container h2 {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.input-field {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.input-field p{
+  text-align: center;
+  font-weight: 600;
+}
+
+.input-field input {
+  width: 100%;
+  margin-top: 0.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  section {
+      padding: 0 10rem;
+  }
+}
+
+
 /* UPLOAD PHOTO */
-.container{
+
+.container {
   width: 100%;
   position: relative;
   display: flex;
@@ -78,14 +88,14 @@ section{
   row-gap: 1rem;
 }
 
-.mobile-btn h3{
-    font-family: 'Fredoka One', sans-serif;
-    color: #163A24;
-    font-weight: lighter;
-    font-size: 1.4rem;
+.mobile-btn h3 {
+  font-family: 'Fredoka One', sans-serif;
+  color: #163A24;
+  font-weight: lighter;
+  font-size: 1.4rem;
 }
 
-.container .wrapper{
+.container .wrapper {
   position: relative;
   height: 250px;
   width: 250px;
@@ -99,11 +109,11 @@ section{
   margin: 0 auto;
 }
 
-.wrapper.active{
+.wrapper.active {
   border: none;
 }
 
-.wrapper .image{
+.wrapper .image {
   position: absolute;
   height: 300px;
   width: 300px;
@@ -111,19 +121,20 @@ section{
   align-items: center;
   justify-content: center;
 }
-.wrapper img{
+
+.wrapper img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.wrapper .icon{
+.wrapper .icon {
   font-size: 50px;
   text-align: center;
   color: #1B8436;
 }
 
-.wrapper .text{
+.wrapper .text {
   font-size: 20px;
   font-weight: 500;
   color: #5b7b63;
@@ -132,12 +143,12 @@ section{
   font-family: 'Quicksand', sans-serif;
 }
 
-.wrapper .text i{
-    font-size: 0.7rem;
-    font-family: 'Quicksand', sans-serif;
+.wrapper .text i {
+  font-size: 0.7rem;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.wrapper #cancel-btn i{
+.wrapper #cancel-btn i {
   position: absolute;
   font-size: 20px;
   right: 15px;
@@ -148,31 +159,33 @@ section{
   transition: 0.3s;
 }
 
-.wrapper.active:hover #cancel-btn i{
+.wrapper.active:hover #cancel-btn i {
   display: block;
 }
 
-.wrapper #cancel-btn i:hover{
-    color: #1B8436;
+.wrapper #cancel-btn i:hover {
+  color: #1B8436;
 }
+
 
 /* .wrapper .file-name{
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  padding: 8px 0;
-  color: #fff;
-  display: none;
-  background-color: #1B8436;
-  font-size: 0.8rem;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
+position: absolute;
+bottom: 0px;
+width: 100%;
+padding: 8px 0;
+color: #fff;
+display: none;
+background-color: #1B8436;
+font-size: 0.8rem;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
 } */
 
-.wrapper.active:hover .file-name{
+.wrapper.active:hover .file-name {
   display: block;
 }
-.input-field #custom-btn{
+
+.input-field #custom-btn {
   display: block;
   width: 100%;
   padding: 0.4rem 0;
@@ -184,87 +197,103 @@ section{
   font-weight: 600;
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 1px;
-    cursor: pointer;
-    background-color: #1B8436;
-    transition: 0.2s;
+  cursor: pointer;
+  background-color: #1B8436;
+  transition: 0.2s;
 }
 
-.input-field #custom-btn:hover{
-    background-color: #163A24;  
+.input-field #custom-btn:hover {
+  background-color: #163A24;
 }
 
-.input-field select{
-    margin-top: 0.2rem;
-    font-family: 'Montserrat', sans-serif;
-    outline: none;
-    line-height: 1;
-    font-size: 1rem;
-    padding: 0.1rem;
+.input-field select {
+  margin-top: 0.2rem;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  line-height: 1;
+  font-size: 1rem;
+  padding: 0.1rem;
 }
 
 textarea{
-    resize: vertical;
-    margin-top: 0.2rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    line-height: 1;
-    font-size: 1rem;
-    padding: 0.4rem;
-    border-radius: 6px;
-    border: 2px solid #000000;
-    outline: none;
+  width: 100%;
+  resize: vertical;
+  margin-top: 0.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  outline: none;
 }
 
-.buttons{
+button{
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.buttons-container{
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1B8436;
+  color: #F0ECD7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.5rem 0.8rem;
+  transition: 0.4s;
+  display: inline-block;
+}
+
+.buttons-container:hover{
+  background-color: #163A24;
+}
+
+@media only screen and (max-width: 1000px) {
+  section {
+    padding: 0 3rem;
+  }
+  .settings-container {
     display: flex;
-    justify-content: end;
-    align-items: flex-end;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 }
 
-.buttons-container a{
-    text-decoration: none;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #1B8436;
-    color: #F0ECD7;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    padding: 0.5rem 0.8rem;
-    transition: 0.4s;
-    display: inline-block;
-}
-
-@media only screen and (max-width: 1024px){
-    section{
-        padding: 0 3rem;
-    }
-
-    .settings-container{
-        display: flex;
-        flex-direction: column;
-        row-gap: 1rem;
-    }
-}
-
-@media only screen and (max-width: 576px){
-    .edit-profile-buttons{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .edit-profile-buttons-container a{
-        width: 100%;
-        text-align: center;
-    }
-
-    .input-field{
-        display: flex;
-        flex-direction: column;
-
-    }
+@media only screen and (max-width: 576px) {
+  .edit-profile-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .edit-profile-buttons-container a {
+      width: 100%;
+      text-align: center;
+  }
+  .input-field {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  .buttons-container a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 }

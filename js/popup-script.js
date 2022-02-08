@@ -1,4 +1,4 @@
-$('button').click(function () {
+$('#delete-btn').click(function () {
     $('.alert').addClass("show");
     $('.alert').removeClass("hide");
     $('.alert').addClass("showAlert");

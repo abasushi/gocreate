@@ -468,6 +468,7 @@ input[type="radio"]:checked + label{
     
     .overlay{
         background-image: url("/img/login-signup-img/overlay-bg.svg");
+        background-color: #E48928;
         background-repeat: none;
         position: relative; 
         height: 100%;

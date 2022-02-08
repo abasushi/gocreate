@@ -62,11 +62,17 @@ button{
     justify-content: center;
 }
 
+.profile-icon{
+    width: 200px;
+    height: 200px;
+    background: #197730;
+    border-radius: 100%;
+}
+
 .profile-icon img{
     width: 200px;
     height: 200px;
-    /* background: #197730;
-    border-radius: 100%; */
+    object-fit: cover;
 }
 
 .name-with-button{

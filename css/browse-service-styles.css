@@ -14,6 +14,10 @@ button{
     background: none;
 }
 
+ul{
+    list-style: none;
+}
+
 @media only screen and (max-width: 768px){
     .seller-profile{
         display: flex;
@@ -35,8 +39,10 @@ button{
 }
 
 .service-image{
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +51,12 @@ button{
 }
 
 .service-image img{
-    width: 500px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    min-height: 350px;
     object-fit: cover;
 }
-
 
 .service-name h2{
     font-family: 'Poppins', sans-serif;
@@ -120,6 +127,18 @@ button{
     background-color: #125723;
 }
 
+.service-description h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.service-description p{
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+    font-size: 1rem;
+}
+
 /* SELLER SECTION */
 
 .seller-section{
@@ -149,6 +168,7 @@ button{
     height: 100px;
     background-color: #f1f1f1;
     border-radius: 100%;
+    overflow: hidden;
 }
 
 .seller-icon img{
@@ -172,3 +192,60 @@ button{
     font-weight: 400;
     font-size: 1rem;
 }
+
+@media only screen and (max-width: 1024px){
+    .actions {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .service-section{
+        padding: 0 3rem;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .service-image {
+        width: 100%;
+        height: 100%;
+        max-width: 900px;
+        min-height: 350px;
+    }
+
+    .service-image img {
+        width: 100%;
+        height: 100%;
+        max-width: 700px;
+        min-height: 350px;
+    }
+
+    .service-name{
+        margin-top: 2rem;
+    }
+
+    .service-details{
+        justify-content: space-between;
+    }
+
+    .service-specification{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seller-section{
+        padding: 0 3rem;
+    }
+
+    .seller-container{
+        flex-direction: column;
+    }
+
+    .seller-details{
+        text-align: center;
+        margin: 1rem;
+    }
+}
+

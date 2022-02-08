@@ -1,17 +1,21 @@
-/*===== MENU SHOW Y HIDDEN =====*/
-const navMenu = document.getElementById('nav-menu'),
-    toggleMenu = document.getElementById('nav-toggle-btn'),
-    closeMenu = document.getElementById('nav-close-btn')
+var big_wrapper;
+var hamburger_menu;
 
-// SHOW
-toggleMenu.addEventListener('click', ()=>{
-    navMenu.classList.toggle('show')
-})
+function declare() {
+  big_wrapper = document.querySelector(".big-wrapper");
+  hamburger_menu = document.querySelector(".hamburger-menu");
+}
 
-// HIDDEN
-closeMenu.addEventListener('click', ()=>{
-    navMenu.classList.remove('show')
-})
+declare();
+
+function events() {
+    // toggle_btn.addEventListener("click", toggleAnimation);
+    hamburger_menu.addEventListener("click", () => {
+      big_wrapper.classList.toggle("active");
+    });
+  }
+  
+  events();
 
 //FUNCTION TO MOVE IMG
 document.addEventListener('mousemove', move);
@@ -29,8 +33,8 @@ function move(e){
 /*===== GSAP ANIMATION =====*/
 // NAV
 gsap.from('.logo', {opacity: 0, duration: 0.5, delay: 1, y: -15})
+gsap.from('.hamburger-menu', {opacity: 0, duration: 0.5, delay: 1, y: -15})
 gsap.from('.nav-item', {opacity: 0, duration: 0.5, delay: 1, y: -15, stagger: 0.3,})
-gsap.from('.nav-toggle-btn', {opacity: 0, duration: 0.5, delay: 1, y: -15})
 
 // HOME
 gsap.from('.title', {opacity: 0, duration: 0.5, delay: 1, y: 15})
